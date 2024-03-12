@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <conio.h>
-int test01(); // ÇÔ¼öÀÇ prototype
+int test01(); // í•¨ìˆ˜ì˜ prototype
 void test02(int a);
+
+//ê¹ƒí—ˆë¸Œì—ì„œ ì†ŒìŠ¤ ìˆ˜ì •
 main()
 {
 	//test01();
@@ -9,43 +11,43 @@ main()
 }
 int test01()
 {
-	// º¯¼öÀÇ ¼±¾ğ
+	// ë³€ìˆ˜ì˜ ì„ ì–¸
 	//char vchar;
 	//int vint;
 	//long vlong;
 	//float vfloat;
 	//double vdouble;
 
-	// º¯¼öÀÇ ÃÊ±âÈ­
+	// ë³€ìˆ˜ì˜ ì´ˆê¸°í™”
 	//vchar = 'f';
 	//vint = 10;
 	//vlong = 4000000000;
 	//vfloat = 3.14159265;
 	//vdouble = 314159265.123456789;
 
-    //printf("\n¾È³çÇÏ¼¼¿ä?\n");
+    //printf("\nì•ˆë…•í•˜ì„¸ìš”?\n");
 	//printf("%8x \n%8x \n%8x \n%8x\n", &vchar, &vint, &vlong, &vfloat);
 	//scanf("%c %d %d %f", &vchar, &vint, &vlong, &vfloat);
-	//printf("Á¤¼ö Ãâ·Â Å×½ºÆ® : [%12d]\n", vint); // 4byte
-	//printf("½Ç¼ö Ãâ·Â Å×½ºÆ® : [%12.8f]\n", vfloat); // 4
-	//printf("Áö¼ö Ãâ·Â Å×½ºÆ® : [%12e]\n", vdouble); // 4byte
+	//printf("ì •ìˆ˜ ì¶œë ¥ í…ŒìŠ¤íŠ¸ : [%12d]\n", vint); // 4byte
+	//printf("ì‹¤ìˆ˜ ì¶œë ¥ í…ŒìŠ¤íŠ¸ : [%12.8f]\n", vfloat); // 4
+	//printf("ì§€ìˆ˜ ì¶œë ¥ í…ŒìŠ¤íŠ¸ : [%12e]\n", vdouble); // 4byte
 	
-	//printf("8Áø¼ö Ãâ·Â Å×½ºÆ® : [%12o]\n", vint); // 4byte
-	//printf("16Áø¼ö Ãâ·Â Å×½ºÆ® : [%12x]\n", vint); // 4byte
+	//printf("8ì§„ìˆ˜ ì¶œë ¥ í…ŒìŠ¤íŠ¸ : [%12o]\n", vint); // 4byte
+	//printf("16ì§„ìˆ˜ ì¶œë ¥ í…ŒìŠ¤íŠ¸ : [%12x]\n", vint); // 4byte
 
-	//printf("¹®ÀÚ Ãâ·Â Å×½ºÆ® : [%c]\n", vchar); // 1byte
-	//printf("¹®ÀÚ ¿¬»ê Å×½ºÆ® : [%c]\n", vchar + 1); // 4byte
-	//¾È³çÇÏ¼¼¿ä?
+	//printf("ë¬¸ì ì¶œë ¥ í…ŒìŠ¤íŠ¸ : [%c]\n", vchar); // 1byte
+	//printf("ë¬¸ì ì—°ì‚° í…ŒìŠ¤íŠ¸ : [%c]\n", vchar + 1); // 4byte
+	//ì•ˆë…•í•˜ì„¸ìš”?
 	char* str[] = {"Zero","One","Two","Three","Four","Five",
-		"Six","Seven","Eight","Nine"}; //¹®ÀÚ¿­ Æ÷ÀÎÅÍ ¹è¿­
-	printf("¼ıÀÚ Å°¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ÇØ´çÇÏ´Â ¿µ´Ü¾î¸¦ ¾Ë·Áµå¸®°Ú½À´Ï´Ù.\n");
-	printf("ÇÁ·Î±×·¥À» ³¡³»½Ã·Á¸é 'Q' Å°¸¦ ÀÔ·ÂÇÏ¼¼¿ä. \n\n");
+		"Six","Seven","Eight","Nine"}; //ë¬¸ìì—´ í¬ì¸í„° ë°°ì—´
+	printf("ìˆ«ì í‚¤ë¥¼ ì…ë ¥í•˜ì„¸ìš”. í•´ë‹¹í•˜ëŠ” ì˜ë‹¨ì–´ë¥¼ ì•Œë ¤ë“œë¦¬ê² ìŠµë‹ˆë‹¤.\n");
+	printf("í”„ë¡œê·¸ë¨ì„ ëë‚´ì‹œë ¤ë©´ 'Q' í‚¤ë¥¼ ì…ë ¥í•˜ì„¸ìš”. \n\n");
 	int n = 1;
      while (n)
 	{
 		printf(">");
-		char c = getch(); //no echo : Å°°ªÀ» Ãâ·ÂÇÏÁö ¾Ê°í ¹İÈ¯ 
-		/*char c1 = getchar(); // [enter] ÇÊ¿ä.
+		char c = getch(); //no echo : í‚¤ê°’ì„ ì¶œë ¥í•˜ì§€ ì•Šê³  ë°˜í™˜ 
+		/*char c1 = getchar(); // [enter] í•„ìš”.
 
 		//if (c == '1') printf("%c : One\n", c);
 		//else if (c == '2') printf("%c : Two\n", c);
@@ -64,7 +66,7 @@ int test01()
         printf("%c : %s\n", c, str[c - 0x30]);
 	}
 }
-void test02(int a) //¹®ÀÚ¿­°ú ¹®ÀÚ¹è¿­
+void test02(int a) //ë¬¸ìì—´ê³¼ ë¬¸ìë°°ì—´
 {
 	char ca[] = "HELLO"; //ca[0]:'H' ...ca[4]:'o' ca[5]:\0
 	for (int i = 0; i < 10; i++) // 0 ~ 5
