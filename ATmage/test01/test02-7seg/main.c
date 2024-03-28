@@ -66,8 +66,9 @@ char* Trans(unsigned long num) // 10진 정수 ==> 16진수 문자열 : 56506 ==
 int main(void)
 {
     uint8_t digit[] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x27, 0x7F, 0x67,0x77, 0x7C, 0x58, 0x5E, 0x79, 0x71};
-		unsigned long i, j = 0;
-		DDRC = 0x07;
+		unsigned long j = 0;
+		//int i, j = 0;
+		//DDRC = 0x07;
 		DDRA = 0xFF; //세그먼트 제어 핀 8개를 출력으로 설정
 		DDRB = 0x0F;
 		int mode = 0;
@@ -78,11 +79,12 @@ int main(void)
 		//LED(&PORTC, 1);
 		if(!(PINC & 0x01 == 1)) // sw가 눌렸을 때 ture
 		{
+			
 			mode++;
 		switch(mode)
 		{
 			case 0:
-			TogglePinC(0,__delay_t); 
+			
 			break;
 		} 
 		}
@@ -101,8 +103,8 @@ int main(void)
 				PORTA = digit[j];
 				_delay_ms(300);
 			}
-		}*/
+		}
     }
 	return 0;
-}
+}*/
 
